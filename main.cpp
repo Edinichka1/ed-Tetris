@@ -40,7 +40,7 @@ int figures[7][4] =
 };
 
 unsigned myRandom() {
-	static unsigned seed = 1; // зерно не должно быть 0
+	static unsigned seed = time(0); // зерно не должно быть 0
 	seed = (seed * 73129 + 95121) % 100000;
 	return seed;
 }
@@ -127,8 +127,6 @@ void checkLine() {
 
 
 int main() {
-
-	srand(time(0));
 
 	// Создание окна
 	RenderWindow window(VideoMode(blockSize * width + gridWidth, blockSize * height + gridWidth), "ed Tetris");
