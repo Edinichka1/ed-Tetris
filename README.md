@@ -1,7 +1,8 @@
 # My first Game with SFML!
-![image](https://github.com/Edinichka1/ed-Tetris/assets/101081910/4b4f4ba2-9f62-4ece-9922-f7d6a239d17e)
+![gameplay](https://github.com/Edinichka1/ed-Tetris/assets/101081910/6a27cb96-3580-4578-9abc-d93d510535d0)
 
 ## Features
+
 It's Tetris.
 
 Use the left/right arrow keys to adjust the horizontal position of a falling piece.
