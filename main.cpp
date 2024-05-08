@@ -1,5 +1,4 @@
 #include <SFML/Graphics.hpp>
-#include <random>
 
 using namespace sf;
 
@@ -88,7 +87,7 @@ Color getColor(int color) {
 // Проверка колизии
 bool check(Point* a) {
 	for (int i = 0; i < 4; ++i) {
-		if (a[i].x >= width || a[i].x < 0 || a[i].y > height) return 0;
+		if (a[i].x >= width || a[i].x < 0 || a[i].y >= height) return 0;
 		else if (field[a[i].y][a[i].x]) return 0;
 	}
 
